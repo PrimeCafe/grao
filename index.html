@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Prime Café – O Café que Transforma Momentos</title>
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="coffee-beans" id="coffeeBeans"></div>
+        <div class="preloader-ring">
+            <div class="preloader-steam"><span></span><span></span><span></span></div>
+            <div class="preloader-cup"><div class="coffee-fill"></div></div>
+        </div>
+        <div class="preloader-text">
+            Prime Café
+            <span>O café que transforma momentos</span>
+        </div>
+        <div class="preloader-bar-wrap"><div class="preloader-bar"></div></div>
+    </div>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Prime%20Caf%C3%A9!" class="wa-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tip">Fale conosco! ☕</span>
+    </a>
+
+    <!-- SCROLL TOP -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- NAVBAR -->
+    <nav class="nav" id="navbar">
+        <div class="nav-c">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-mug-hot"></i>
+                <div class="nav-logo-text">Prime Café<span>Desde 2010</span></div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#specs">Cardápio</a></li>
+                <li><a href="#process">Processo</a></li>
+                <li><a href="#test">Depoimentos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#contact" class="nav-cta">Reservar Mesa</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="carousel" id="carousel">
+            <div class="c-slide act">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200&q=80" alt="Café Premium">
+                <div class="slide-ov"></div>
+                <div class="slide-ct">
+                    <div class="slide-badge"><i class="fas fa-star"></i><span>Café Premium Artesanal</span></div>
+                    <h1 class="slide-title">Descubra o Sabor<br>do <em>Café Perfeito</em></h1>
+                    <p class="slide-desc">Cada xícara é uma obra-prima. Grãos selecionados das melhores fazendas, torrados com perfeição para despertar seus sentidos.</p>
+                    <div class="slide-btns">
+                        <a href="#specs" class="btn btn-gold"><i class="fas fa-mug-hot"></i> Nosso Cardápio</a>
+                        <a href="#about" class="btn btn-out"><i class="fas fa-play"></i> Nossa História</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-slide">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80" alt="Ambiente">
+                <div class="slide-ov"></div>
+                <div class="slide-ct">
+                    <div class="slide-badge"><i class="fas fa-leaf"></i><span>100% Orgânico &amp; Sustentável</span></div>
+                    <h1 class="slide-title">Momentos que se Tornam<br><em>Memórias</em></h1>
+                    <p class="slide-desc">Um ambiente acolhedor onde cada detalhe foi pensado para proporcionar a melhor experiência em cada gole.</p>
+                    <div class="slide-btns">
+                        <a href="#contact" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Reserve sua Mesa</a>
+                        <a href="#gallery" class="btn btn-out"><i class="fas fa-images"></i> Galeria</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-slide">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=1200&q=80" alt="Latte Art">
+                <div class="slide-ov"></div>
+                <div class="slide-ct">
+                    <div class="slide-badge"><i class="fas fa-award"></i><span>Premiado Internacionalmente</span></div>
+                    <h1 class="slide-title">A Arte do<br><em>Café Especial</em></h1>
+                    <p class="slide-desc">Nossos baristas são artistas. Cada latte art é única, cada sabor é uma descoberta, cada visita é inesquecível.</p>
+                    <div class="slide-btns">
+                        <a href="https://wa.me/5511999999999" class="btn btn-gold"><i class="fab fa-whatsapp"></i> Peça pelo WhatsApp</a>
+                        <a href="#process" class="btn btn-out"><i class="fas fa-seedling"></i> Do Grão à Xícara</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-ind" id="cInd">
+            <span class="act" data-i="0"></span>
+            <span data-i="1"></span>
+            <span data-i="2"></span>
+        </div>
+        <button class="c-nav c-prev" id="cPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="c-nav c-next" id="cNext"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- COUNTERS -->
+    <section class="counter-sec">
+        <div class="counter-bar">
+            <div class="counter" data-aos="fade-up">
+                <i class="fas fa-users"></i>
+                <div class="counter-num" data-target="15847">0</div>
+                <div class="counter-lbl">Visitantes Mensais</div>
+            </div>
+            <div class="counter" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-mug-hot"></i>
+                <div class="counter-num" data-target="52430">0</div>
+                <div class="counter-lbl">Xícaras Servidas</div>
+            </div>
+            <div class="counter" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-star"></i>
+                <div class="counter-num" data-target="4890">0</div>
+                <div class="counter-lbl">Avaliações 5 Estrelas</div>
+            </div>
+            <div class="counter" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-award"></i>
+                <div class="counter-num" data-target="14">0</div>
+                <div class="counter-lbl">Anos de Tradição</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sec about" id="about">
+        <div class="sec-c">
+            <div class="about-grid">
+                <div class="about-imgs" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Sobre" class="about-img-main">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=300&q=80" alt="Barista" class="about-img-sec">
+                    <div class="about-exp">
+                        <div class="about-exp-num">14+</div>
+                        <div class="about-exp-text">Anos de Experiência</div>
+                    </div>
+                </div>
+                <div class="about-ct" data-aos="fade-left">
+                    <div class="sec-b">
+                        <span class="sec-b-line"></span>
+                        <i class="fas fa-coffee" style="color:var(--gold)"></i>
+                        <span class="sec-b-text">Nossa História</span>
+                        <span class="sec-b-line"></span>
+                    </div>
+                    <h2 class="sec-title">Tradição e Paixão em Cada <em>Gole</em></h2>
+                    <div class="sec-div"></div>
+                    <p class="about-text">O Prime Café nasceu em 2010 de um sonho: oferecer o café mais excepcional da cidade. Desde então, nos tornamos referência em qualidade, sabor e experiência.</p>
+                    <p class="about-text">Selecionamos pessoalmente os melhores grãos das fazendas de Minas Gerais, Espírito Santo e Bahia. Cada lote passa por uma rigorosa análise de qualidade antes de chegar à sua xícara.</p>
+                    <div class="about-feat">
+                        <div class="about-feat-item"><i class="fas fa-seedling"></i><span>Grãos Orgânicos</span></div>
+                        <div class="about-feat-item"><i class="fas fa-fire"></i><span>Torra Artesanal</span></div>
+                        <div class="about-feat-item"><i class="fas fa-hand-holding-heart"></i><span>Comércio Justo</span></div>
+                        <div class="about-feat-item"><i class="fas fa-trophy"></i><span>Premiado</span></div>
+                    </div>
+                    <a href="#specs" class="btn btn-gold"><i class="fas fa-arrow-right"></i> Conheça Nossos Cafés</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALTIES -->
+    <section class="sec specs" id="specs">
+        <div class="sec-c">
+            <div class="sec-h" data-aos="fade-up">
+                <div class="sec-b"><span class="sec-b-line"></span><i class="fas fa-mug-hot" style="color:var(--gold)"></i><span class="sec-b-text">Nossos Cafés Especiais</span><span class="sec-b-line"></span></div>
+                <h2 class="sec-title">Sabores que <em>Encantam</em></h2>
+                <p class="sec-sub">Descubra nossa seleção exclusiva de cafés especiais, preparados com técnicas artesanais e grãos premium.</p>
+                <div class="sec-div"></div>
+            </div>
+            <div class="specs-grid">
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="spec-img-wrap"><span class="spec-tag">Mais Vendido</span><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80" alt="Espresso"></div>
+                    <div class="spec-ct"><h3 class="spec-title">Espresso Premium</h3><p class="spec-desc">Intenso e encorpado, com crema dourada perfeita. Notas de chocolate amargo e caramelo.</p><div class="spec-price"><span class="spec-price-val">R$ 12,90</span><button class="spec-btn"><i class="fas fa-plus"></i></button></div></div>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="spec-img-wrap"><span class="spec-tag">Novidade</span><img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&q=80" alt="Cappuccino"></div>
+                    <div class="spec-ct"><h3 class="spec-title">Cappuccino Clássico</h3><p class="spec-desc">Equilíbrio perfeito entre espresso, leite vaporizado e espuma cremosa com canela.</p><div class="spec-price"><span class="spec-price-val">R$ 16,90</span><button class="spec-btn"><i class="fas fa-plus"></i></button></div></div>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="spec-img-wrap"><span class="spec-tag">Especial</span><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Latte"></div>
+                    <div class="spec-ct"><h3 class="spec-title">Caramel Latte</h3><p class="spec-desc">Suave e doce, com calda de caramelo artesanal e leite perfeitamente texturizado.</p><div class="spec-price"><span class="spec-price-val">R$ 18,90</span><button class="spec-btn"><i class="fas fa-plus"></i></button></div></div>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="spec-img-wrap"><span class="spec-tag">Premium</span><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&q=80" alt="Cold Brew"></div>
+                    <div class="spec-ct"><h3 class="spec-title">Cold Brew</h3><p class="spec-desc">Extração lenta a frio por 24 horas. Refrescante, suave e com notas frutadas naturais.</p><div class="spec-price"><span class="spec-price-val">R$ 15,90</span><button class="spec-btn"><i class="fas fa-plus"></i></button></div></div>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="spec-img-wrap"><span class="spec-tag">Artesanal</span><img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&q=80" alt="Pour Over"></div>
+                    <div class="spec-ct"><h3 class="spec-title">Pour Over</h3><p class="spec-desc">Método manual que realça as nuances únicas de cada grão. Puro e sofisticado.</p><div class="spec-price"><span class="spec-price-val">R$ 22,90</span><button class="spec-btn"><i class="fas fa-plus"></i></button></div></div>
+                </div>
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="spec-img-wrap"><span class="spec-tag">Exclusivo</span><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=400&q=80" alt="Mocha"></div>
+                    <div class="spec-ct"><h3 class="spec-title">Mocha Supreme</h3><p class="spec-desc">A fusão perfeita entre espresso intenso, chocolate belga e leite cremoso.</p><div class="spec-price"><span class="spec-price-val">R$ 19,90</span><button class="spec-btn"><i class="fas fa-plus"></i></button></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="sec process" id="process">
+        <div class="sec-c">
+            <div class="sec-h" data-aos="fade-up">
+                <div class="sec-b"><span class="sec-b-line"></span><i class="fas fa-seedling" style="color:var(--gold)"></i><span class="sec-b-text">Do Grão à Xícara</span><span class="sec-b-line"></span></div>
+                <h2 class="sec-title">Nosso Processo <em>Artesanal</em></h2>
+                <p class="sec-sub">Cada etapa é cuidadosamente executada para garantir a máxima qualidade e sabor em cada xícara servida.</p>
+                <div class="sec-div"></div>
+            </div>
+            <div class="process-grid">
+                <div class="step" data-aos="fade-up" data-aos-delay="0"><div class="step-num">01</div><i class="fas fa-seedling"></i><h4 class="step-title">Seleção dos Grãos</h4><p class="step-desc">Visitamos pessoalmente as fazendas para selecionar os melhores grãos arábica.</p></div>
+                <div class="step" data-aos="fade-up" data-aos-delay="150"><div class="step-num">02</div><i class="fas fa-fire"></i><h4 class="step-title">Torra Artesanal</h4><p class="step-desc">Mestres torrefadores controlam cada segundo da torra para desenvolver sabores perfeitos.</p></div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300"><div class="step-num">03</div><i class="fas fa-flask"></i><h4 class="step-title">Preparo Especial</h4><p class="step-desc">Cada método de preparo é escolhido para extrair o melhor de cada blend.</p></div>
+                <div class="step" data-aos="fade-up" data-aos-delay="450"><div class="step-num">04</div><i class="fas fa-mug-hot"></i><h4 class="step-title">Servido com Amor</h4><p class="step-desc">Apresentamos seu café com arte e dedicação, transformando cada momento.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sec test" id="test">
+        <div class="sec-c">
+            <div class="sec-h" data-aos="fade-up">
+                <div class="sec-b"><span class="sec-b-line"></span><i class="fas fa-comments" style="color:var(--gold)"></i><span class="sec-b-text">Depoimentos</span><span class="sec-b-line"></span></div>
+                <h2 class="sec-title">O Que Dizem Nossos <em>Clientes</em></h2>
+                <p class="sec-sub">A satisfação dos nossos clientes é o nosso maior prêmio.</p>
+                <div class="sec-div"></div>
+            </div>
+            <div class="test-slider" data-aos="fade-up">
+                <div class="test-slide act"><div class="test-quote"><i class="fas fa-quote-left"></i></div><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"O melhor café que já tomei na vida! O ambiente é incrível, os baristas são verdadeiros artistas e o sabor é simplesmente incomparável."</p><div class="test-author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Maria" class="test-av"><div><div class="test-name">Maria Silva</div><div class="test-role">Designer, Cliente há 5 anos</div></div></div></div>
+                <div class="test-slide"><div class="test-quote"><i class="fas fa-quote-left"></i></div><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"Descobri o Prime Café por acaso e hoje não consigo imaginar minha rotina sem ele. A qualidade é consistente e o cappuccino é divino."</p><div class="test-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="João" class="test-av"><div><div class="test-name">João Oliveira</div><div class="test-role">Empresário, Cliente há 3 anos</div></div></div></div>
+                <div class="test-slide"><div class="test-quote"><i class="fas fa-quote-left"></i></div><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"Como barista profissional, posso afirmar: o Prime Café está em outro nível. A torra é perfeita e o resultado fala por si."</p><div class="test-author"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Ana" class="test-av"><div><div class="test-name">Ana Costa</div><div class="test-role">Barista Profissional</div></div></div></div>
+            </div>
+            <div class="test-nav"><button id="tPrev"><i class="fas fa-chevron-left"></i></button><button id="tNext"><i class="fas fa-chevron-right"></i></button></div>
+            <div class="test-dots" id="tDots"><span class="test-dot act" data-i="0"></span><span class="test-dot" data-i="1"></span><span class="test-dot" data-i="2"></span></div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="sec gallery" id="gallery">
+        <div class="sec-c">
+            <div class="sec-h" data-aos="fade-up">
+                <div class="sec-b"><span class="sec-b-line"></span><i class="fas fa-camera" style="color:var(--gold)"></i><span class="sec-b-text">Galeria</span><span class="sec-b-line"></span></div>
+                <h2 class="sec-title">Momentos no <em>Prime Café</em></h2>
+                <p class="sec-sub">Um passeio visual pelo nosso espaço, nossos cafés e os momentos especiais.</p>
+                <div class="sec-div"></div>
+            </div>
+            <div class="gal-grid">
+                <div class="gal-item" data-aos="fade-up"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Galeria"><i class="fas fa-expand"></i></div>
+                <div class="gal-item" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=400&q=80" alt="Galeria"><i class="fas fa-expand"></i></div>
+                <div class="gal-item" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?w=400&q=80" alt="Galeria"><i class="fas fa-expand"></i></div>
+                <div class="gal-item" data-aos="fade-up" data-aos-delay="0"><img src="https://images.unsplash.com/photo-1453614516510-269442e37412?w=400&q=80" alt="Galeria"><i class="fas fa-expand"></i></div>
+                <div class="gal-item" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&q=80" alt="Galeria"><i class="fas fa-expand"></i></div>
+                <div class="gal-item" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80" alt="Galeria"><i class="fas fa-expand"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="sec-c">
+            <div class="cta-ct" data-aos="fade-up">
+                <h2 class="sec-title" style="color:var(--white)">Pronto para uma <em>Experiência Única</em>?</h2>
+                <p class="sec-sub" style="color:var(--milk)">Visite-nos hoje e descubra por que somos o café preferido da cidade.</p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <a href="#contact" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Reservar Agora</a>
+                    <a href="https://wa.me/5511999999999" class="btn btn-out" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec contact" id="contact">
+        <div class="sec-c">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="sec-b"><span class="sec-b-line"></span><i class="fas fa-envelope" style="color:var(--gold)"></i><span class="sec-b-text">Entre em Contato</span><span class="sec-b-line"></span></div>
+                    <h2 class="sec-title">Fale <em>Conosco</em></h2>
+                    <div class="sec-div"></div>
+                    <p class="contact-text">Estamos sempre prontos para atender você. Entre em contato para reservas, eventos especiais ou simplesmente para saber mais sobre nossos cafés.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><div><h4>Endereço</h4><p>Rua do Café, 123 – Centro<br>São Paulo – SP, 01000-000</p></div></div>
+                        <div class="contact-detail"><i class="fas fa-phone-alt"></i><div><h4>Telefone</h4><a href="tel:+5511999999999">(11) 99999-9999</a></div></div>
+                        <div class="contact-detail"><i class="fas fa-envelope"></i><div><h4>E-mail</h4><a href="mailto:contato@primecafe.com.br">contato@primecafe.com.br</a></div></div>
+                        <div class="contact-detail"><i class="fas fa-clock"></i><div><h4>Horário</h4><p>Seg a Sex: 7h – 21h | Sáb e Dom: 8h – 22h</p></div></div>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Envie sua Mensagem</h3>
+                    <p>Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+                    <form id="contactForm">
+                        <div class="fr">
+                            <div class="fg"><label for="name">Nome Completo</label><input type="text" id="name" placeholder="Seu nome" required></div>
+                            <div class="fg"><label for="email">E-mail</label><input type="email" id="email" placeholder="seu@email.com" required></div>
+                        </div>
+                        <div class="fr">
+                            <div class="fg"><label for="phone">Telefone</label><input type="tel" id="phone" placeholder="(11) 99999-9999"></div>
+                            <div class="fg"><label for="subject">Assunto</label><select id="subject"><option value="">Selecione...</option><option>Reserva de Mesa</option><option>Evento Corporativo</option><option>Aniversário</option><option>Informações Gerais</option><option>Outro</option></select></div>
+                        </div>
+                        <div class="fg"><label for="message">Mensagem</label><textarea id="message" placeholder="Escreva sua mensagem aqui..." required></textarea></div>
+                        <button type="submit" class="fs"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-sec">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975870268497!2d-46.65390768502161!3d-23.56509668468077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" style="margin-bottom:15px;display:inline-flex;">
+                    <i class="fas fa-mug-hot"></i>
+                    <div class="nav-logo-text">Prime Café<span>Desde 2010</span></div>
+                </a>
+                <p>Desde 2010, o Prime Café transforma momentos simples em experiências extraordinárias. Cada grão, cada xícara, cada visita é uma celebração do café perfeito.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#specs">Cardápio</a></li>
+                    <li><a href="#test">Depoimentos</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Horários</h4>
+                <ul class="footer-links" style="font-family:'Montserrat',sans-serif;font-size:0.8rem;color:rgba(250,246,241,0.7);">
+                    <li style="display:flex;justify-content:space-between;flex-wrap:wrap;"><span>Segunda – Sexta</span><span style="color:var(--gold);">7h – 21h</span></li>
+                    <li style="display:flex;justify-content:space-between;flex-wrap:wrap;"><span>Sábado</span><span style="color:var(--gold);">8h – 22h</span></li>
+                    <li style="display:flex;justify-content:space-between;flex-wrap:wrap;"><span>Domingo</span><span style="color:var(--gold);">8h – 22h</span></li>
+                    <li style="display:flex;justify-content:space-between;flex-wrap:wrap;"><span>Feriados</span><span style="color:var(--gold);">9h – 20h</span></li>
+                </ul>
+            </div>
+            <div class="footer-news">
+                <h4 class="footer-title">Newsletter</h4>
+                <p>Receba novidades, promoções exclusivas e dicas sobre o mundo do café diretamente no seu e-mail.</p>
+                <form class="news-form" onsubmit="event.preventDefault();alert('Obrigado por se inscrever! ☕');">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-c">
+                <p>&copy; 2026 <a href="#">Prime Café</a>. Todos os direitos reservados.</p>
+                <p>Feito com <i class="fas fa-heart" style="color:var(--gold);"></i> e muito café</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
